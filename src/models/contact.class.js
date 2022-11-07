@@ -9,7 +9,7 @@ export class Contact {
         this.name = name;
         this.surname = surname;
         this.email = email;
-        this.connected = false;
+        this.connected = connected;
     }
 
 }

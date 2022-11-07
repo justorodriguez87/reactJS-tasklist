@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Contact } from '../../models/contact.class';
+import ContactStatus from './contactStatus';
 
-const ContactComponent = ({contact}) => {
+const contactComponent = ({contact}) => {
     return (
         <div>
             <h2>
@@ -14,17 +15,15 @@ const ContactComponent = ({contact}) => {
             <h4>
                 Email: { contact.email }
             </h4>
-            <h5>
-                Estado: { contact.connected ? 'Contacto En Línea':'Contacto No Disponible' }
-            </h5>
+            <ContactStatus status={true} />
         </div>
     );
 };
 
 
-ContactComponent.propTypes = {
+contactComponent.propTypes = {
     contact: PropTypes.instanceOf(Contact)
 };
 
 
-export default ContactComponent;
+export default contactComponent;
