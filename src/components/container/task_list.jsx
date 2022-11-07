@@ -11,7 +11,6 @@ const TaskListComponent = () => {
         console.log('TODO: Cambiar estado de una tarea')
     }*/
 
-
     return (
         <div>
             <div>
